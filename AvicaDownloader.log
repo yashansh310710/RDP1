@@ -1,0 +1,87 @@
+[2026-03-03 21:18:50.513] [debug] [6872] [main.cpp:23] [wWinMain] Running...
+[2026-03-03 21:18:50.514] [debug] [6872] [main.cpp:26] [wWinMain] Create window.
+[2026-03-03 21:18:50.535] [debug] [6872] [mainwindow.cpp:179] [MainWindow::InitWindow] Init window.
+[2026-03-03 21:18:50.535] [debug] [6872] [postevent.cpp:384] [report_install_uninstall_event] Post event: option = install_start   duration = 0s
+[2026-03-03 21:18:51.315] [debug] [6872] [postevent.cpp:513] [report_install_uninstall_event] Post event: install_start end. success
+[2026-03-03 21:18:51.315] [debug] [6872] [mainwindow.cpp:181] [MainWindow::InitWindow] Query installed path.
+[2026-03-03 21:18:51.315] [debug] [6872] [mainwindow.cpp:211] [MainWindow::InitWindow] Old path: 
+[2026-03-03 21:18:51.315] [debug] [6872] [mainwindow.cpp:219] [MainWindow::InitWindow] Set path: C:\Program Files (x86)\Avica
+[2026-03-03 21:18:51.339] [debug] [6872] [main.cpp:34] [wWinMain] Show window.
+[2026-03-03 21:18:54.264] [debug] [6872] [mainwindow.cpp:100] [MainWindow::Notify] Select path.
+[2026-03-03 21:19:12.398] [debug] [6872] [mainwindow.cpp:41] [MainWindow::Notify] Click install.
+[2026-03-03 21:19:12.398] [debug] [6872] [postevent.cpp:384] [report_install_uninstall_event] Post event: option = install_click_start   duration = 0s
+[2026-03-03 21:19:12.670] [debug] [6872] [postevent.cpp:513] [report_install_uninstall_event] Post event: install_click_start end. success
+[2026-03-03 21:19:12.670] [debug] [6872] [mainwindow.cpp:95] [MainWindow::Notify] Create download thread.
+[2026-03-03 21:19:12.670] [debug] [10300] [mainwindow.cpp:417] [MainWindow::ThreadDownloader] Thread start.
+[2026-03-03 21:19:12.670] [debug] [10300] [downloadhelper.cpp:16] [DownloadHelper::DownloadHelper] New helper.
+[2026-03-03 21:19:12.670] [debug] [10300] [mainwindow.cpp:421] [MainWindow::ThreadDownloader] Init config.
+[2026-03-03 21:19:12.670] [debug] [10300] [downloadhelper.cpp:37] [DownloadHelper::init_config] Init config.
+[2026-03-03 21:19:12.671] [debug] [10300] [downloadhelper.cpp:249] [DownloadHelper::get_config] Init config from server.
+[2026-03-03 21:19:13.655] [debug] [10300] [downloadhelper.cpp:319] [DownloadHelper::get_config] Read size = 242
+[2026-03-03 21:19:13.655] [debug] [10300] [downloadhelper.cpp:319] [DownloadHelper::get_config] Read size = 0
+[2026-03-03 21:19:13.655] [debug] [10300] [downloadhelper.cpp:39] [DownloadHelper::init_config] Data: {
+	"thread": 8,
+	"type": 2,
+	"hash": "ba9ce0e92f134233",
+	"urls": [
+		"https://download.avica.com/Avica_v8.1.1.9.exe",
+		"https://download.avica.link/Avica_v8.1.1.9.exe",
+		"https://www.landray.vip/downloader/Avica_v8.1.1.9.exe"
+	]
+}
+[2026-03-03 21:19:13.655] [debug] [10300] [downloadhelper.cpp:49] [DownloadHelper::init_config] Package: https://download.avica.com/Avica_v8.1.1.9.exe
+[2026-03-03 21:19:13.655] [debug] [10300] [downloadhelper.cpp:49] [DownloadHelper::init_config] Package: https://download.avica.link/Avica_v8.1.1.9.exe
+[2026-03-03 21:19:13.655] [debug] [10300] [downloadhelper.cpp:49] [DownloadHelper::init_config] Package: https://www.landray.vip/downloader/Avica_v8.1.1.9.exe
+[2026-03-03 21:19:13.656] [debug] [468] [downloadhelper.cpp:601] [DownloadHelper::sort_address::<lambda_490b4dbfa5ec0a500befad1bc5fdb693>::operator ()] Test: download.avica.com
+[2026-03-03 21:19:13.913] [debug] [468] [downloadhelper.cpp:633] [DownloadHelper::sort_address::<lambda_490b4dbfa5ec0a500befad1bc5fdb693>::operator ()] Test success: download.avica.com 250ms
+[2026-03-03 21:19:13.913] [debug] [10668] [downloadhelper.cpp:601] [DownloadHelper::sort_address::<lambda_490b4dbfa5ec0a500befad1bc5fdb693>::operator ()] Test: download.avica.link
+[2026-03-03 21:19:13.935] [debug] [10668] [downloadhelper.cpp:633] [DownloadHelper::sort_address::<lambda_490b4dbfa5ec0a500befad1bc5fdb693>::operator ()] Test success: download.avica.link 31ms
+[2026-03-03 21:19:13.935] [debug] [11968] [downloadhelper.cpp:601] [DownloadHelper::sort_address::<lambda_490b4dbfa5ec0a500befad1bc5fdb693>::operator ()] Test: www.landray.vip
+[2026-03-03 21:19:15.688] [debug] [11968] [downloadhelper.cpp:633] [DownloadHelper::sort_address::<lambda_490b4dbfa5ec0a500befad1bc5fdb693>::operator ()] Test success: www.landray.vip 1750ms
+[2026-03-03 21:19:15.689] [debug] [10300] [downloadhelper.cpp:69] [DownloadHelper::init_config] Server list: download.avica.com
+[2026-03-03 21:19:15.689] [debug] [10300] [downloadhelper.cpp:69] [DownloadHelper::init_config] Server list: download.avica.link
+[2026-03-03 21:19:15.689] [debug] [10300] [downloadhelper.cpp:69] [DownloadHelper::init_config] Server list: www.landray.vip
+[2026-03-03 21:19:15.689] [debug] [10300] [downloadhelper.cpp:86] [DownloadHelper::start_download] Local path: C:\Users\Alpha's PC\Downloads\Avica_Setup_1772552955.exe
+[2026-03-03 21:19:15.691] [debug] [10300] [downloadhelper.cpp:341] [DownloadHelper::get_file_size] Get file size begin.
+[2026-03-03 21:19:15.873] [debug] [10300] [downloadhelper.cpp:419] [DownloadHelper::get_file_size] Get file size end.
+[2026-03-03 21:19:15.873] [debug] [10300] [downloadhelper.cpp:128] [DownloadHelper::start_download] File size: 47390704
+[2026-03-03 21:19:15.873] [debug] [10300] [downloadhelper.cpp:156] [DownloadHelper::start_download] Download range [0-5923837].
+[2026-03-03 21:19:15.873] [debug] [10300] [downloadhelper.cpp:156] [DownloadHelper::start_download] Download range [5923838-11847675].
+[2026-03-03 21:19:15.873] [debug] [10300] [downloadhelper.cpp:156] [DownloadHelper::start_download] Download range [11847676-17771513].
+[2026-03-03 21:19:15.873] [debug] [10300] [downloadhelper.cpp:156] [DownloadHelper::start_download] Download range [17771514-23695351].
+[2026-03-03 21:19:15.873] [debug] [4292] [downloadhelper.cpp:425] [DownloadHelper::download_thread] Download from download.avica.com
+[2026-03-03 21:19:15.873] [debug] [10300] [downloadhelper.cpp:156] [DownloadHelper::start_download] Download range [23695352-29619189].
+[2026-03-03 21:19:15.873] [debug] [10300] [downloadhelper.cpp:156] [DownloadHelper::start_download] Download range [29619190-35543027].
+[2026-03-03 21:19:15.873] [debug] [10300] [downloadhelper.cpp:156] [DownloadHelper::start_download] Download range [35543028-41466865].
+[2026-03-03 21:19:15.873] [debug] [12856] [downloadhelper.cpp:425] [DownloadHelper::download_thread] Download from download.avica.com
+[2026-03-03 21:19:15.873] [debug] [1756] [downloadhelper.cpp:425] [DownloadHelper::download_thread] Download from download.avica.com
+[2026-03-03 21:19:15.873] [debug] [10300] [downloadhelper.cpp:165] [DownloadHelper::start_download] Download range [41466866-47390703].
+[2026-03-03 21:19:15.873] [debug] [10300] [downloadhelper.cpp:168] [DownloadHelper::start_download] Wait for the download to end...
+[2026-03-03 21:19:15.873] [debug] [12492] [downloadhelper.cpp:425] [DownloadHelper::download_thread] Download from download.avica.com
+[2026-03-03 21:19:15.873] [debug] [11192] [downloadhelper.cpp:425] [DownloadHelper::download_thread] Download from download.avica.com
+[2026-03-03 21:19:15.873] [debug] [6260] [downloadhelper.cpp:425] [DownloadHelper::download_thread] Download from download.avica.com
+[2026-03-03 21:19:15.873] [debug] [6792] [downloadhelper.cpp:425] [DownloadHelper::download_thread] Download from download.avica.com
+[2026-03-03 21:19:15.873] [debug] [9816] [downloadhelper.cpp:425] [DownloadHelper::download_thread] Download from download.avica.com
+[2026-03-03 21:19:46.805] [debug] [9816] [downloadhelper.cpp:550] [DownloadHelper::download_thread] Download from download.avica.com end.
+[2026-03-03 21:19:49.440] [debug] [6792] [downloadhelper.cpp:550] [DownloadHelper::download_thread] Download from download.avica.com end.
+[2026-03-03 21:19:51.197] [debug] [4292] [downloadhelper.cpp:550] [DownloadHelper::download_thread] Download from download.avica.com end.
+[2026-03-03 21:19:51.986] [debug] [1756] [downloadhelper.cpp:550] [DownloadHelper::download_thread] Download from download.avica.com end.
+[2026-03-03 21:19:53.721] [debug] [12492] [downloadhelper.cpp:550] [DownloadHelper::download_thread] Download from download.avica.com end.
+[2026-03-03 21:19:54.743] [debug] [11192] [downloadhelper.cpp:550] [DownloadHelper::download_thread] Download from download.avica.com end.
+[2026-03-03 21:19:56.688] [debug] [6260] [downloadhelper.cpp:550] [DownloadHelper::download_thread] Download from download.avica.com end.
+[2026-03-03 21:19:57.771] [debug] [12856] [downloadhelper.cpp:550] [DownloadHelper::download_thread] Download from download.avica.com end.
+[2026-03-03 21:19:57.773] [debug] [10300] [downloadhelper.cpp:178] [DownloadHelper::start_download] Download end.
+[2026-03-03 21:19:57.773] [debug] [10300] [downloadhelper.cpp:183] [DownloadHelper::start_download] Calc hash sum.
+[2026-03-03 21:19:59.160] [debug] [10300] [downloadhelper.cpp:209] [DownloadHelper::start_download] Hash sum: local = ba9ce0e92f134233   server = ba9ce0e92f134233
+[2026-03-03 21:19:59.160] [debug] [10300] [mainwindow.cpp:460] [MainWindow::ThreadDownloader] Download package completed.
+[2026-03-03 21:19:59.160] [debug] [10300] [downloadhelper.cpp:27] [DownloadHelper::~DownloadHelper] Free helper.
+[2026-03-03 21:19:59.160] [debug] [10300] [mainwindow.cpp:465] [MainWindow::ThreadDownloader] Run package.
+[2026-03-03 21:19:59.160] [debug] [10300] [postevent.cpp:384] [report_install_uninstall_event] Post event: option = download_duration   duration = 47s
+[2026-03-03 21:19:59.577] [debug] [10300] [postevent.cpp:513] [report_install_uninstall_event] Post event: download_duration end. success
+[2026-03-03 21:19:59.577] [debug] [10300] [mainwindow.cpp:486] [MainWindow::ThreadDownloader] Run as administrator.
+[2026-03-03 21:19:59.958] [debug] [10300] [mainwindow.cpp:496] [MainWindow::ThreadDownloader] Wait for the program to exit...
+[2026-03-03 21:20:52.452] [debug] [10300] [mainwindow.cpp:504] [MainWindow::ThreadDownloader] Program exits.
+[2026-03-03 21:20:52.452] [debug] [10300] [mainwindow.cpp:506] [MainWindow::ThreadDownloader] Remove package...
+[2026-03-03 21:20:52.487] [debug] [10300] [mainwindow.cpp:518] [MainWindow::ThreadDownloader] Remove package end.
+[2026-03-03 21:20:52.487] [debug] [10300] [postevent.cpp:384] [report_install_uninstall_event] Post event: option = install_end   duration = 0s
+[2026-03-03 21:20:53.472] [debug] [10300] [postevent.cpp:513] [report_install_uninstall_event] Post event: install_end end. success

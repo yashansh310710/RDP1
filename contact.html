@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - DropStore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">DropStore.</div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="contact.html" style="color: var(--primary-color);">Contact</a>
+            <a href="about.html">About us</a>
+        </nav>
+        <div class="nav-actions">
+            <button id="login-btn" class="icon-btn">👤</button>
+            <button id="theme-toggle" class="icon-btn">🌙</button>
+            <button id="cart-btn" class="icon-btn">🛒 Cart (<span id="cart-count">0</span>)</button>
+        </div>
+    </header>
+
+    <div class="contact-container">
+        <div class="contact-header">
+            <h1>Get in Touch</h1>
+            <p>Have a question about an order or our products? We're here to help.</p>
+        </div>
+
+        <div class="contact-layout">
+            <div class="contact-form-section">
+                <h2>Send us a message</h2>
+                <form id="contact-form">
+                    <div class="form-row">
+                        <input type="text" placeholder="Your Name" class="form-input" required>
+                        <input type="email" placeholder="Your Email" class="form-input" required>
+                    </div>
+                    <input type="text" placeholder="Order Number (Optional)" class="form-input">
+                    <textarea placeholder="How can we help you?" class="form-input" rows="6" required style="resize: vertical;"></textarea>
+                    <button type="submit" class="btn-primary" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+
+            <div class="contact-info-section">
+                <div class="info-block">
+                    <h3>Email Support</h3>
+                    <p>support@dropstore.com</p>
+                    <p class="text-muted">We aim to reply within 24 hours.</p>
+                </div>
+                <div class="info-block">
+                    <h3>Business Hours</h3>
+                    <p>Monday - Friday: 9am - 5pm EST</p>
+                    <p>Saturday - Sunday: Closed</p>
+                </div>
+                <div class="info-block">
+                    <h3>Mailing Address</h3>
+                    <p>123 Commerce Blvd, Suite 100</p>
+                    <p>New York, NY 10001</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cart-overlay" class="overlay"></div>
+    <div id="cart-drawer" class="cart-drawer">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button id="close-cart" class="icon-btn">✖</button>
+        </div>
+        <div class="cart-body">
+            <p id="empty-cart-msg">Your cart is empty.</p>
+            <ul id="cart-items-list"></ul>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-price">$0.00</span>
+            </div>
+            <button class="btn-primary checkout-btn">Checkout</button>
+        </div>
+    </div>
+    <div id="toast-container"></div>
+
+    <div id="auth-modal" class="modal-overlay">
+        </div>
+
+<div id="cart-overlay" class="overlay"></div>
+    <div id="cart-drawer" class="cart-drawer">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button id="close-cart" class="icon-btn">✖</button>
+        </div>
+        <div class="cart-body">
+            <p id="empty-cart-msg">Your cart is currently empty.</p>
+            <ul id="cart-items-list"></ul>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-price">$0.00</span>
+            </div>
+            <button class="btn-primary checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <div id="toast-container"></div>
+
+    <div id="auth-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="close-modal icon-btn">✖</button>
+            <div class="auth-tabs">
+                <button class="auth-tab active" data-target="login-form">Login</button>
+                <button class="auth-tab" data-target="signup-form">Sign Up</button>
+            </div>
+            
+            <form id="login-form" class="auth-form active">
+                <input type="email" placeholder="Email" class="form-input" required>
+                <input type="password" placeholder="Password" class="form-input" required>
+                <a href="#" class="forgot-password">Forgot password?</a>
+                <button type="button" class="btn-primary" style="width: 100%;">Log In</button>
+            </form>
+
+            <form id="signup-form" class="auth-form">
+                <input type="text" placeholder="Full Name" class="form-input" required>
+                <input type="email" placeholder="Email" class="form-input" required>
+                <input type="password" placeholder="Password" class="form-input" required>
+                <button type="button" class="btn-primary" style="width: 100%;">Create Account</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
